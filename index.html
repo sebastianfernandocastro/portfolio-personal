@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Porfolio</title>
+        <link rel="shortcut icon" href="source/icono.ico">
+    
+    </head>
+    <body>
+        <header id="header">
+            <img id="volver" class="mover" style="--left: 60px; --top:60px;"  src="source/header-f-verde.png" alt="" width="20px"/>
+            <img id="menu" class="mover" style="--left: 1370px; --top:60px;" src="source/header-mas-azul.png" alt="" width="30px"/>
+        </header>
+        <div class="container">
+            <div class="divMaster">
+                <table>
+                    <tr id="vectores">
+                        <td id="tdDescripcion">
+                            <H1 class="mover" style="--left: 500px;">Software</H1>
+                            <H1 class="mover" style="--left: 600px;">Developer</H1>
+                            <H1 class="mover" style="--left: 710px;">Trainee.</H1>
+                        </td>
+                        <td id="tdFoto">
+                            <img class="mover" style="--left: 15px; --top:20px;" src="source/developer-photo.png" alt="" width="250px"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="divMaster"">
+
+            </div>
+            <div id="divProyectos" class="divMaster">
+                <div class="box" id="popup-Glutch">
+                    <h1 id="h1Portfolio" style="color: white;">Gluch</h1>
+                    <img src="source/GLUTCH/img0.PNG" alt="" width="250px" height="200px"/>
+                    <div>
+                        <table id="tableImagenes">
+                            <tr>
+                                <td>
+                                    <img src="source/C++.png"alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="box" id="popup-Benjamin">
+                    <h1 h1 id="h1Portfolio" style="color: white;">Benjamin Perez Gaucho </h1>
+                    <img src="source/BenjaminPerez/img0.png" alt="" width="250px" height="200px"/>
+                    <div>
+                        <table id="tableImagenes">
+                            <tr>
+                                <td>
+                                    <img src="source/C++.png"alt="">
+                                </td>
+                                <td>
+                                    <img src="source/SFML.png"alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="box" id="popup-BBDD">
+                    <h1 id="h1Portfolio" style="color: white;">Gestor de BBDD</h1>
+                    <img src="source/bbdd.PNG"  alt="" width="250px" height="200px"/>
+                    <div>
+                        <table id="tableImagenes">
+                            <tr>
+                                <td>
+                                    <img src="source/CSHARP.png"alt="">
+                                </td>
+                                <td>
+                                    <img src="source/SQL.png"alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="box">
+                    <h1 id="h1Portfolio" style="color: white;">Web PORTFOLIO</h1>
+                    <img src="source/Portfolio.PNG"  alt="" width="250px" height="200px"/>
+                    <div>
+                        <table id="tableImagenes">
+                            <tr>
+                                <td>
+                                    <img src="source/JS.png"alt="">
+                                </td>
+                                <td>
+                                    <img src="source/HTML.png"alt="">
+                                </td>
+                                <td>
+                                    <img src="source/CSS.png"alt="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="divMaster" id="contacto">
+            </div>
+        </div>
+        
+        <div>
+            <div id="popup-window" class="popup-window">
+                <h1>Benjamin Perez Gaucho</h1>
+                <div id="divInterno">
+                    <button onclick="btnanterior(vectorBenjamin, benjaminImg)" class="arrow-btn" id="left-btn""></button>
+                    <img id="imagenBenjamin" src="source/BenjaminPerez/img0.png" alt="">
+                    <button onclick="btnsiguiente(vectorBenjamin, benjaminImg)" class="arrow-btn"></button>
+                </div>
+                <p>Benjamin Perez es un juego de accion en scroll lateral 2D que narra la vida de un gaucho llamado Benjamin Perez, quien se enfrenta a diversos monstruos de la mitología argentina.<br>
+                    <br>El mismo esta desarrollado en el IDE ZINJAI el lenguaje es C++ y la librearia que utilizamos para poder realizarlo fue SFML.</p>
+                <button class="my-button" id="close-button">Cerrar</button>
+            </div>   
+            <div id="popup-window-G" class="popup-window">
+                <h1>Glutch</h1>
+                <div id="divInterno">
+                    <button onclick="btnanterior(vectorGlutch, glutchImg)" class="arrow-btn" id="left-btn""></button>
+                    <img id="imagenGlutch"src="source/GLUTCH/img0.PNG" alt="">
+                    <button onclick="btnsiguiente(vectorGlutch, glutchImg)" class="arrow-btn"></button>
+                </div>
+                <p>El Glutch es un juego de cartas de hasta DOS jugadores, el cual consiste en acomodar las cartas de tu mazo en el siguiente orden 10-J-Q-K-A.
+                <br>Para conseguir deberas lanzar unos dados que te permiten realizar diferentes acciones tales como robar, cambiar y hasta robarle a la baraja.
+                <br><br>Se ejecuta en consola y esta programado en C++.
+                </p>
+                <button class="my-button" id="close-button-G">Cerrar</button>
+            </div>   
+        </div>
+        <footer class="footer">
+            <a href="https://itch.io/profile/fernandv" target="_blank">
+                <img src="source/itchio.png" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/sebastian-fernando-castro/" target="_blank">
+                <img src="source/linkedin.png" alt="">
+            </a>
+            <a href="https://www.ejemplo.com" target="_blank">
+                <img src="source/github.png" alt="">
+            </a>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
