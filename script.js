@@ -90,6 +90,18 @@ closeButton.addEventListener("click", function() {
 popupWindowB.style.display = "none";
 });
 
+var popupBBDD = document.getElementById("popup-BBDD");
+var popupWindowBB = document.getElementById("popup-window-b");
+var closeButtonBB = document.getElementById("close-button-b");
+
+popupBBDD.addEventListener("click", function(event) {
+event.preventDefault();
+popupWindowBB.style.display = "block";
+});
+closeButtonBB.addEventListener("click", function() {
+popupWindowBB.style.display = "none";
+});
+
 const benjaminImg = document.getElementById("imagenBenjamin");
 const glutchImg = document.getElementById("imagenGlutch");
 const BBDDImg = document.getElementById("imagenBBDD");
