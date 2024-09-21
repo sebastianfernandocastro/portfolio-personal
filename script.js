@@ -106,7 +106,7 @@ const benjaminImg = document.getElementById("imagenBenjamin");
 const glutchImg = document.getElementById("imagenGlutch");
 const BBDDImg = document.getElementById("imagenBBDD");
 const portfolioImg = document.getElementById("imagenPortfolio");
-const vectorBenjamin = ["source/BenjaminPerez/img0.png", "source/BenjaminPerez/img1.PNG", "source/BenjaminPerez/img2.PNG", "source/BenjaminPerez/img3.png", "source/BenjaminPerez/img4.png", "source/BenjaminPerez/img5.png",]
+const vectorBenjamin = ["source/BenjaminPerez/img0.png", "source/BenjaminPerez/img1.png", "source/BenjaminPerez/img2.png", "source/BenjaminPerez/img3.png", "source/BenjaminPerez/img4.png", "source/BenjaminPerez/img5.png",]
 const vectorGlutch = ["source/GLUTCH/img0.png", "source/GLUTCH/img1.png", "source/GLUTCH/img2.png", "source/GLUTCH/img3.png" ]
 
 function btnsiguiente(vector, cadena)
