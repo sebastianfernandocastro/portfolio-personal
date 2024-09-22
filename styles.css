@@ -25,7 +25,8 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
-    scroll-snap-align: start;  
+    scroll-snap-align: start; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .divMaster table {
     width: 100%;
@@ -61,7 +62,7 @@ html, body {
     margin-top: 0px;
     margin-bottom: 0px;
     white-space: pre;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 .mover {
@@ -75,7 +76,7 @@ html, body {
     background-size: cover;
     background-position: center;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
     font-size: 12px;
 
 }
@@ -90,7 +91,7 @@ html, body {
     background-color: rgb(219, 219, 219);
     color: #4831d4;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 
 .box {
@@ -110,7 +111,7 @@ html, body {
 }
 .box h1 {
     margin-bottom: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 .box div{
     margin-top: 10px;
@@ -167,7 +168,7 @@ html, body {
 }
 .divSobreMi h1{
     color: azure;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 .divSobreMi table{
     width: 100%;
@@ -177,13 +178,13 @@ html, body {
 }
 .divSobreMi p{
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 #contacto{
     background-color: #4831d4;
 }
 .popup-window {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
     position: fixed;
     width: 400px;
     height: 600px;
@@ -216,7 +217,7 @@ html, body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
 }
 .my-button:hover {
 background-color: #35259d;
@@ -267,4 +268,67 @@ background-color: #4831d4;
 
 #left-btn {
     transform: rotate(180deg);
+}
+
+@font-face {
+    font-family: 'SuperMoods';
+    src: url('fonts/Open-Sans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#divDescripcion{
+    height: 100%;
+    width: 50%;
+    align-content: center;
+    color: #4831d4;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#divDescripcion h3{
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#divDescripcion h1{
+    text-align: center;
+    font-family: 'SuperMoods';
+}
+
+#divTecnologias{
+    height: 100%;
+    width: 50%;
+    background-color: #4831d4;
+    align-content: center;
+    align-items: center;
+    color: beige;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#divTecnologias h3{
+    text-align: justify;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#divTecnologias h1{
+    text-align: center;
+    font-family: 'SuperMoods';
+}
+#divCaja{
+    width: 60%;
+    height: 80px;
+    background-color:beige;
+    border-radius: 5px;
+    margin-left: 150px;
+}
+#divCaja table{
+    width: 100%;
+    height: 100%;
+}
+#divCaja img{
+    margin-top: 0;
+    width: 60px;
+    height: 60px;
 }
