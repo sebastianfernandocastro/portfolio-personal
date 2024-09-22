@@ -102,12 +102,26 @@ closeButtonBB.addEventListener("click", function() {
 popupWindowBB.style.display = "none";
 });
 
+var popupPortofolio = document.getElementById("popup-Portfolio");
+var popupWindowP = document.getElementById("popup-window-p");
+var closeButtonP = document.getElementById("close-button-p");
+
+popupPortofolio.addEventListener("click", function(event) {
+event.preventDefault();
+popupWindowP.style.display = "block";
+});
+closeButtonP.addEventListener("click", function() {
+popupWindowP.style.display = "none";
+});
+
 const benjaminImg = document.getElementById("imagenBenjamin");
 const glutchImg = document.getElementById("imagenGlutch");
 const BBDDImg = document.getElementById("imagenBBDD");
 const portfolioImg = document.getElementById("imagenPortfolio");
-const vectorBenjamin = ["source/BenjaminPerez/img0.png", "source/BenjaminPerez/img1.png", "source/BenjaminPerez/img2.png", "source/BenjaminPerez/img3.png", "source/BenjaminPerez/img4.png", "source/BenjaminPerez/img5.png",]
-const vectorGlutch = ["source/GLUTCH/img0.png", "source/GLUTCH/img1.png", "source/GLUTCH/img2.png", "source/GLUTCH/img3.png" ]
+const vectorBenjamin = ["source/BenjaminPerez/img0.png", "source/BenjaminPerez/img1.png", "source/BenjaminPerez/img2.png", "source/BenjaminPerez/img3.png", "source/BenjaminPerez/img4.png", "source/BenjaminPerez/img5.png"];
+const vectorGlutch = ["source/GLUTCH/img0.png", "source/GLUTCH/img1.png", "source/GLUTCH/img2.png", "source/GLUTCH/img3.png"];
+const vectorBBDD = ["source/BBDD/img0.png", "source/BBDD/img1.png", "source/BBDD/img2.png", "source/BBDD/img3.png"];
+const VectorPortfolio =["source/Portfolio/img0.png"];
 
 function btnsiguiente(vector, cadena)
 {

@@ -111,7 +111,7 @@
                 </div>
                 <div class="box" id="popup-BBDD">
                     <h1 id="h1Portfolio" style="color: white;">Gestor de BBDD</h1>
-                    <img src="source/bbdd.PNG"  alt="" width="250px" height="200px"/>
+                    <img src="source/BBDD/img0.png"  alt="" width="250px" height="200px"/>
                     <div>
                         <table id="tableImagenes">
                             <tr>
@@ -125,9 +125,9 @@
                         </table>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" id="popup-Portfolio">
                     <h1 id="h1Portfolio" style="color: white;">Web PORTFOLIO</h1>
-                    <img src="source/Portfolio.PNG"  alt="" width="250px" height="200px"/>
+                    <img src="source/Portoflio/img0.png"  alt="" width="250px" height="200px"/>
                     <div>
                         <table id="tableImagenes">
                             <tr>
@@ -157,7 +157,8 @@
                     <img id="imagenGlutch"src="source/GLUTCH/img0.png" alt="">
                     <button onclick="btnsiguiente(vectorGlutch, glutchImg)" class="arrow-btn"></button>
                 </div>
-                <p>El Glutch es un juego de cartas de hasta DOS jugadores, el cual consiste en acomodar las cartas de tu mazo en el siguiente orden 10-J-Q-K-A.
+                <p>
+                    El Glutch es un juego de cartas de hasta DOS jugadores, el cual consiste en acomodar las cartas de tu mazo en el siguiente orden 10-J-Q-K-A.
                 <br>Para conseguir deberas lanzar unos dados que te permiten realizar diferentes acciones tales como robar, cambiar y hasta robarle a la baraja.
                 <br><br>Se ejecuta en consola y esta programado en C++.
                 </p>
@@ -170,20 +171,37 @@
                     <img id="imagenBenjamin" src="source/BenjaminPerez/img0.png" alt="">
                     <button onclick="btnsiguiente(vectorBenjamin, benjaminImg)" class="arrow-btn"></button>
                 </div>
-                <p>Benjamin Perez es un juego de accion en scroll lateral 2D que narra la vida de un gaucho llamado Benjamin Perez, quien se enfrenta a diversos monstruos de la mitología argentina.<br>
-                    <br>El mismo esta desarrollado en el IDE ZINJAI el lenguaje es C++ y la librearia que utilizamos para poder realizarlo fue SFML.</p>
+                <p>
+                    Benjamin Perez es un juego de accion en scroll lateral 2D que narra la vida de un gaucho llamado Benjamin Perez, quien se enfrenta a diversos monstruos de la mitología argentina.<br>
+                    <br>El mismo esta desarrollado en el IDE ZINJAI el lenguaje es C++ y la librearia que utilizamos para poder realizarlo fue SFML.
+                </p>
                 <button class="my-button" id="close-button">Cerrar</button>
             </div>   
             <div id="popup-window-b" class="popup-window">
                 <h1>BBDD</h1>
                 <div id="divInterno">
                     <button onclick="btnanterior(vectorBBDD, BBDDImg)" class="arrow-btn" id="left-btn""></button>
-                    <img id="imagenBBDD" src="source/bbdd.PNG/img0.png" alt="">
+                    <img id="imagenBBDD" src="source/BBDD/img0.png" alt="">
                     <button onclick="btnsiguiente(vectorBBDD, BBDDImg)" class="arrow-btn"></button>
                 </div>
                 <p>
+                    Es basicamente un gestor de bases de datos para una tienda ficticia, el cual te permite tanto listar los productos, como realizar una busqueda mas especifica, tambien agregar, modificar
+                    y eliminar los mismos. <br> <br>
+                    Cada producto tiene una Categoria y una Marca, las mimas pueden ser creadas, modificadas y eliminadas al igual que los productos.
                 </p>
                 <button class="my-button" id="close-button-b">Cerrar</button>
+            </div>  
+            <div id="popup-window-p" class="popup-window">
+                <h1>BBDD</h1>
+                <div id="divInterno">
+                    <button onclick="btnanterior(vectorPotfolio, PortolioImg)" class="arrow-btn" id="left-btn""></button>
+                    <img id="ImagenPortfolio" src="source/Portoflio/img0.png" alt="">
+                    <button onclick="btnsiguiente(vectorPortfolio, PortofolioImg)" class="arrow-btn"></button>
+                </div>
+                <p>
+                    <br><br>Es la pagina que estan recorriendo en estos momentos, esta echa 100% con HTML, CSS y JS, en este caso no estoy utilizando ningun Framework ni Biblioteca. <br><br>
+                </p>
+                <button class="my-button" id="close-button-p">Cerrar</button>
             </div>  
         </div>
         <footer class="footer">
