@@ -30,7 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
         // Cambiar las imágenes según la posición del div
-        switch (divPosition) {
+        switch (divPosition)
+        {
             case 1:
                 changeVolverImage("source/header-f-verde.png");
                 changeMenuImage("source/header-mas-azul.png"); 
@@ -42,6 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
             case 3:
                 changeVolverImage("source/header-f-blanco.png");
                 changeMenuImage("source/header-mas-blanco.png"); 
+                break;
+            case 4:
+                changeVolverImage("source/header-f-verde.png");
+                changeMenuImage("source/header-mas-verde.png"); 
                 break;
         }
     }
@@ -140,3 +145,30 @@ function btnanterior(vector, cadena) {
     }
     cadena.src = vector[indice];
 }
+
+const btn = document.getElementById('enviar');
+
+btn.addEventListener('click', function(event) {
+event.preventDefault();
+
+btn.textContent = 'Sending...'; // Cambia el texto del botón
+
+const serviceID = 'default_service'; // Cambia estos valores si es necesario
+const templateID = 'template_158vv18';
+
+const templateParams = {
+emailjs_nombre: document.getElementById('nombre').value,
+emailjs_correo: document.getElementById('correo').value,
+emailjs_mensaje: document.getElementById('mensaje').value,
+reply_to: document.getElementById('correo').value
+};
+
+emailjs.send(serviceID, templateID, templateParams)
+.then(() => {
+    btn.textContent = 'ENVIAR';
+    alert('¡Correo enviado!');
+}, (err) => {
+    btn.textContent = 'ENVIAR';
+    alert(JSON.stringify(err));
+});
+});

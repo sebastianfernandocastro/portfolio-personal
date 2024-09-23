@@ -31,7 +31,8 @@
             <div class="divMaster"">
                 <div id="divDescripcion">
                     <H1>¿Quien soy?</H1>
-                    <h3>Mi nombre es Sebastián Fernando Castro, soy un entusiasta de la tecnología y el desarrollo de software en constante evolución.
+
+                    <h3>Mi nombre es Sebastián Fernando Castro, soy un entusiasta de la tecnología y el desarrollo de software en constante evolución. <br><br>
                         Actualmente estoy cursando una Tecnicatura Universitaria en Programacion en la Universidad Tecnologica Nacional, 
                         donde estoy adquiriendo habilidades sólidas para convertir mi pasión en una carrera profesional. <br></h3>
                     <h3>Durante tres años, tuve la oportunidad de trabajar en el área de operaciones y logística, 
@@ -51,7 +52,8 @@
                         aprovechando su integración con .NET. <br><br>
                         En el ámbito del desarrollo web, utilizo JavaScript para crear sitios dinámicos e interactivos,
                         tanto en el front-end como en el back-end. Además, con HTML y CSS me encargo de la estructura y el 
-                        diseño visual de las páginas, asegurando que sean atractivas y funcionales. <br><br> En el ámbito de las BBDD, he trabajado con T-SQL, el lenguaje de Microsoft SQL Server. Me ha permitido escribir consultas avanzadas, procedimientos almacenados y manejar
+                        diseño visual de las páginas, asegurando que sean atractivas y funcionales. <br><br>
+                        Tambien he trabajado con T-SQL, el lenguaje de Microsoft SQL Server. Me ha permitido crear Bases de datos solidas, realizar consultas avanzadas, procedimientos almacenados y manejar
                         transacciones de manera eficiente, optimizando el rendimiento y la lógica dentro de la base de datos. <br><br></h3>
                         <div id="divCaja">
                             <table>
@@ -145,7 +147,32 @@
                     </div>
                 </div>
             </div>
-            <div class="divMaster" id="contacto">
+            <div class="divMaster" id="azul">
+                <div id="contacto">
+                    <div id="quieres">
+                        <h1>¡Enviame un mensaje!</h1>
+                        <h3>¿Tenes alguna pregunta / propuesta, o simplemente quiere
+                            saludarme?</h3>
+                    </div>
+                    <div class="doble">
+                        <div id="cajaContacto"">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <label for="nombre">Nombre:</label>
+                                        <input type="text" id="nombre" name="nombre">
+                                    </td>
+                                    <td>
+                                        <label for="correo">Correo:</label>
+                                        <input type="text" id="correo" name="correo">
+                                    </td>
+                                </tr>
+                            </table>
+                            <textarea type="text" name="mensaje" id="mensaje" placeholder="Escriba su mensaje..."></textarea> <br><br>
+                            <button class="my-button" id="enviar">ENVIAR</button>
+                        </div>
+                    </div>
+                <div>
             </div>
         </div>
         
@@ -215,6 +242,15 @@
                 <img src="source/github.png" alt="">
             </a>
         </footer>
+
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+
+        <script type="text/javascript">
+            emailjs.init('iBTZF5dqKIrUoJRUu');
+        </script>
+        
         <script src="script.js"></script>
     </body>
 </html>
