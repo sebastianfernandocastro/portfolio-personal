@@ -336,9 +336,8 @@ background-color: #3724b3;
     width: 100%;
     align-content: center;
     text-align: center;
-    align-items: center;
     color: beige;
-
+    background-color: #4831d4;
 }
 #cajaContacto{
     width: 60%;
@@ -370,10 +369,6 @@ background-color: #3724b3;
     align-content: center;
     font-family: 'SuperMoods';
     font-size: 25px;
-}
-
-#azul{
-    background-color: #4831d4;
 }
 
 #mensaje{

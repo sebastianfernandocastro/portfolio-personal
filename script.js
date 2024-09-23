@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const volverImg = document.getElementById("volver");
     const menuImg = document.getElementById("menu");
 
-    // Funciones para cambiar la dirección de las imágenes
     function changeVolverImage(newSrc) {
         volverImg.src = newSrc;
     }
@@ -15,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function() {
         menuImg.src = newSrc;
     }
 
-    // Función para verificar la posición del scroll
     function checkScrollPosition() {
         const scrollPosition = container.scrollTop; // Obtener la posición actual del scroll
         // Aquí puedes determinar en qué div estás basado en la posición del scroll
@@ -29,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // Cambiar las imágenes según la posición del div
         switch (divPosition)
         {
             case 1:
@@ -51,10 +48,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Añadir el evento de scroll para comprobar la posición al hacer scroll
+
     container.addEventListener("scroll", checkScrollPosition);
 
-    // Agregar el evento de clic a la imagen
     if (imagen) {
         imagen.addEventListener("click", function() {
             console.log("Imagen clickeada");
@@ -68,6 +64,18 @@ document.addEventListener("DOMContentLoaded", function() {
     } else {
         console.error("No se encontró el elemento con el ID 'volver'");
     }
+
+    if (menuImg) {
+        menuImg.addEventListener("click", function() {
+            container.scrollTo({
+                top: container.scrollHeight,
+                behavior: 'smooth'
+            });
+        });
+    } else {
+        console.error("No se encontró el elemento con el ID 'volver'");
+    }
+
 });
 let indice = 0;
 
