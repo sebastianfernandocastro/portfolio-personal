@@ -177,6 +177,6 @@ emailjs.send(serviceID, templateID, templateParams)
     alert('¡Correo enviado!');
 }, (err) => {
     btn.textContent = 'ENVIAR';
-    alert(JSON.stringify(err));
+    alert(JSON.stringify("Hubo un problema al enviar el mensaje, por favor, revise los datos ingresados..."));
 });
 });
